@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Inria+Sans:300,300italic,regular,italic,700,700italic" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="javascript/file.js" defer></script>
+    <title>translator extension</title>
+</head>
+<body>
+    <label for="inputText">Your text:</label>
+    <textarea id="inputText" rows="10" placeholder="type here"></textarea>
+
+    <div class="">
+        <!-- Translate from -->
+        <label for="translateFrom">Translate from:</label>
+        <select id="translateFrom">
+            <option value="en">English
+            </option>            
+        </select>
+        
+        <!-- Translate to -->
+        <label for="translateTo">Translate to:</label>
+        <select id="translateTo">
+            <option value="es">Spanish
+            </option>            
+        </select>
+
+        <!-- Buttons for actions -->
+        <button id="translateBtn">Translate</button>
+        <button id="speakBtn">Speak</button>
+
+        <!-- Output -->
+        <div id="outputText" aria-readonly="true">
+            
+        </div>
+    </div>
+
+    
+</body>
+</html>
